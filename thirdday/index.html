@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS 进阶</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+</head>
+<body style="padding: 10px;" ng-app="app">
+    <div ng-controller="login">
+        用户名: <input type="text" ng-model="uname"><br>
+        密码: <input type="text" ng-model="password"><br>
+        <div class="button" ng-click="login()">登陆</div>
+        <!--<div ng-show="errormsg.length > 0" class="alert-box">{{errormsg}}</div>-->
+        <div ng-show="errormsg.length > 0" class="alert-box" ng-bind="errormsg"></div>
+    </div>
+</body>
+<script src="http://apps.bdimg.com/libs/angular.js/1.2.16/angular.min.js"></script>
+<script src="js/login.js"></script>
+</html>
